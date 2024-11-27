@@ -5,4 +5,12 @@
 
 body{
     color:#DAD9D9;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.left-bar{
+    width: 20%;
+    height: 100vh;
+    background-color: antiquewhite;
 }
