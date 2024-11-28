@@ -9,7 +9,8 @@ body{
     color:#FFFFFF;
     font-size: 1vw;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: red;
+    background-color: #443F3F;
+    color:#DAD9D9;
 }
 
 
@@ -31,7 +32,7 @@ div.left-bar{
 div.right-bar{
     width: 100%;
     height: 100%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 
@@ -45,6 +46,8 @@ div.logo-container{
 
 div.left-bar h1[type='logo']{
     font-size: 1.5vw;
+    color: #FFFFFF;
+
 }
 
 div.logotext-container{
@@ -85,9 +88,9 @@ div.nav-bar ul li{
 div.nav-bar ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #FFFFFF;
     font-size: 0.9vw;
     font-weight: bold;
+   
    
 }
 
@@ -231,9 +234,11 @@ div.img1{
 div.hero1-container{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     height: 10vh;
+    background: #443F3F;
 }
 
 div.hero2-container{
@@ -242,13 +247,51 @@ div.hero2-container{
     align-items: center;
     width: 100%;
     height: 50vh;
-    background-color: black;
+    background-color: #443F3F;
     gap: 2vw;
 }
 
+
+@media(max-width:600px)
+{
+    div.hero2-container{
+        flex-direction: column;
+        gap: 15vw;
+    }
+
+    div.img1-container{
+        width: 100%;
+        height: 30vh;
+        background-color:#443F3F;
+} 
+
+div.hero2-container div.h1 h1,div.hero2-container div.h2 h1,div.hero2-container div.h3 h1
+{
+    /* color: red; */
+    font-size:7vw;
+}
+
+body{
+    font-size: 3vw;
+}
+
+
+}
+
+div.hero2-container h1{
+    font-size:1.5vw;
+    text-align: center;
+}
+
+div.hero2-container p{
+    text-align: center;
+    max-width:250px; 
+}
+
+
 div.hero3-container{
     width: 100%;
-    height: 37vh;
+    height: 45vh;
     background-color: rgb(204, 161, 161);
 }
 
@@ -257,7 +300,22 @@ div.hero3-container div.img2{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 37vh;
+    height:45vh;
+}
+
+
+@media(max-width:600px){
+    div.hero3-container{
+        width: 100%;
+        height: 25vh;
+    
+    }
+    
+    div.hero3-container div.img2{
+        background-size: contain;
+        width: 100%;
+        height: 120vh;
+    }
 }
 
 div.hero4-container{
@@ -267,6 +325,70 @@ div.hero4-container{
     flex-direction: column;
     width: 100%;
     height: 50vh;
-    background-color: rgb(37, 215, 87);
     gap: 2vw;
+    background-color: #443F3F;
 }
+
+
+
+div.hero4-container div.h1{
+   font-size: 3vw;
+   color: #F3E681;
+   border-bottom:4px solid #F3E681;
+}
+
+div.hero4-container div.p1{
+text-align: center;
+max-width: 600px;
+}
+
+div.hero4-container div.p2{
+    text-align: center;
+    max-width: 778px;
+    line-height: 1.5vw;
+    }
+
+
+
+    div.button button{
+        background: none;
+        width: 15vw;
+        height: 7vh;
+        border: 4px solid #FFF186;
+        border-radius:2px;
+        background-color:  #FFF186;
+    }
+
+
+    div.button button:hover{
+        background-color: #ffe100;
+    }
+
+    @media (max-width:600px){
+        div.hero4-container div.h1{
+            font-size: 10vw;
+            text-align: justify;
+        }
+
+        div.hero4-container{
+            height: 80vh;
+            gap: 10vw;
+        }
+        div.hero4-container div.p1{
+            max-width:500px;
+            text-align: left;
+            font-size: 5vw;
+        }
+        div.hero4-container div.p2{
+            max-width:500px;
+            text-align: left;
+            font-size: 5vw;
+            line-height: 4.9vw;
+        }
+        
+        div.button button{
+            width:90vw;
+            font-size: 5vw;
+            border-radius:1.5vw;
+        }
+    }
